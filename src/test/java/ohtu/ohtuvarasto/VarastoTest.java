@@ -109,7 +109,7 @@ public class VarastoTest {
 
     @Test
     public void varastostaEiVoiOttaaMäärääEnempää() {
-        varasto.otaVarastosta(12);
+        varasto.otaVarastosta(13);
         assertEquals(varasto.getSaldo(), 0.0, vertailuTarkkuus);
     }
 
