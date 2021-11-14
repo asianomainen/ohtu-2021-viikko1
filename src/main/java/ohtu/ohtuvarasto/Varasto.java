@@ -20,9 +20,9 @@ public class Varasto {
         this.tilavuus = Math.max(tilavuus, 0.0);
 
         if (alkuSaldo < 0.0) {
-                this.saldo = 0.0;
+            this.saldo = 0.0;
         } else {
-                this.saldo = Math.min(alkuSaldo, tilavuus);
+            this.saldo = Math.min(alkuSaldo, tilavuus);
         }
     }
 
@@ -56,7 +56,7 @@ public class Varasto {
         if (maara < 0) {
             return 0.0;   // tällainen pikapoistuminenkin!
         }
-        
+
         if (maara > saldo) {          // annetaan mitä voidaan
             double kaikkiMitaVoidaan = saldo;
             saldo = 0.0;               // ja tyhjäksi menee
